@@ -2,8 +2,6 @@
 A GUI based Loan Management System created using Tkinker, Python as a part of an internship at Cybernexa Pvt. Ltd.
 ## Description
 
----
-
 The project is a desktop application - GUI based Loan Management System developed using Python, Tkinter. For the backend database services, SQLite is used. It has the following features:
 
 1. Add a new Loan Product.
@@ -14,7 +12,6 @@ The project is a desktop application - GUI based Loan Management System develope
 
 ## Prerequisites
 
----
 
 - Must have latest version of Python installed. (recommended: Python 3.8)
 - Must have a Python IDE like IDLE, Anaconda, Atom or (recommended) Sublime Text installed.
@@ -22,7 +19,6 @@ The project is a desktop application - GUI based Loan Management System develope
 
 ## Installation
 
----
 
 - Download the required prerequisites.
 - Download the source code and open it using the preferred IDE.
@@ -30,7 +26,6 @@ The project is a desktop application - GUI based Loan Management System develope
 
 ## Credit
 
----
 
 **Mrudhula Raya** - LinkedIn - @mrudhularaya 
 

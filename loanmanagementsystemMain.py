@@ -1,4 +1,5 @@
-# The code for changing pages was derived from: http://stackoverflow.com/questions/7546050/switch-between-two-frames-in-tkinter  
+# The code for changing pages was derived from: http://stackoverflow.com/questions/7546050/switch-between-two-frames-in-tkinter
+#Code written by Mrudhula Raya  
 
 import tkinter as tk
 from tkinter import messagebox
@@ -666,7 +667,7 @@ class AssignLoan(tk.Frame):
             c = conn.cursor()
 
             #Insert into table
-            c.execute("INSERT INTO AssignTest1 VALUES(:CustomerID, :LoanType, :LoanAmount, :Salary, :FixedObligations, :LoanTenure,:InterestRate)",
+            c.execute("INSERT INTO LoanAssign VALUES(:CustomerID, :LoanType, :LoanAmount, :Salary, :FixedObligations, :LoanTenure,:InterestRate)",
                 {'CustomerID': CustomerID.get(), 'LoanType': LoanType.get(), 'LoanAmount': LoanAmount.get(), 'Salary': Salary.get(), 'FixedObligations': FixedObligations.get(), 'LoanTenure': LoanTenure.get(),'InterestRate': InterestRate.get()}
                 )
             #Commit changes
@@ -707,7 +708,7 @@ class AssignLoan(tk.Frame):
             c = conn.cursor()
 
             #Query the database
-            c.execute("SELECT Eligibility FROM LoanProduct WHERE LoanType = ?", (z.get(),) )
+            c.execute("SELECT Eligibility FROM AddLoanProduct WHERE LoanType = ?", (z.get(),) )
             
             #Commit changes
             conn.commit()
